@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +13,8 @@
 
 <body>
     <?php
+    if(@$_POST['tipe'] && @$_POST['detail']){
+
     if (@$_POST['tipe'] && @$_POST['detail']) {
         date_default_timezone_set("Asia/Jakarta");
         $ex = date("d-m-Y", time());
@@ -40,6 +43,54 @@ Kami tunggu orderan selanjutnya 🙂
 
 Terimakasih.";
     }
+    $d ='{
+    "nama_asli": "'.$nama_asli.'",
+    "nama": "'.$nama.'",
+    "tanggal": "'.$ex.'"}';
+
+        $save = fopen("data.json", "a");
+	    fputs($save, $d);
+        fclose($save);
+    
+    } else{
+
+        $file = json_decode(file_get_contents('data.json'),true);
+        if($file!=''){
+            $nama_asli = $file['nama_asli'];
+            $nama = $file['nama'];
+            $ex = $file['tanggal'];
+            $data = "
+| $ex - $nama_asli |
+    
+Hi $nama_asli,
+
+Pesanan kamu telah selesai diproses, 
+
+Detail akun :
+------------------------------------------------
+Username : $nama 
+Password : sirhuka123
+------------------------------------------------
+Masa aktif 3 bulan dimulai tanggal $ex.
+
+Demi keamanan data kami menyarankanmu mengganti katasandi ataupun email ya kak,
+
+Kami tunggu orderan selanjutnya 🙂
+
+
+Terimakasih.";
+    
+         }else{
+             die();
+        }
+
+    }
+
+
+
+    
+
+
     ?>
 
     <br>
