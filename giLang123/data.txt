@@ -1,0 +1,46 @@
+
+<table width="700px" border="1" style="border-collapse:collapse;">
+    <tr>
+        <th>
+            <img src="../img/logo.png" width="100px" height="70px" alt="">
+
+        </th>
+        <th width="500px">MASKER SPIRULINA <br>
+            PAKET  ANAK BARU <br></th>
+        <th>
+            <img src="../img/logo.png" width="100px" height="70px" alt="">
+
+        </th>
+
+
+    </tr>
+
+    <tr>
+        <td colspan="3">
+            <br>
+
+            Dikirim oleh Sirhuka - 0895363065244
+            <div style="float:right">Surakarta, 22 Oct 2019 </div>
+            <!-- <hr style="border-top: dotted 1px;"> -->
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <br>
+            <b>PENERIMA :<br></b>
+            <br>
+            <b>Nama : </b>  Agung Wibowo  <br><br>
+
+            <b>Alamat Lengkap : </b>  Konter Pulsa Sis Cell Kp.cijingga Rt.01/03 Ds.serang ,bekasi ,cikarang Selatan,jawa Barat ,kecamatancikarang Selatan,kota/kab Bekasi 
+            <br><br>
+            <b>Nomer HP :</b>  081284771787
+        </td>
+
+
+
+
+    </tr>
+
+
+
+</table>
